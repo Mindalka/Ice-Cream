@@ -1,0 +1,929 @@
+body {
+margin: 0;
+padding: 0;
+font-family: "Roboto";
+}
+
+.site-wrapper {
+	min-width: 940px;
+	background-color: #849d8f;
+	background-image: url("../глейси/img/ice-cream-1.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/*!
+  * ===========================================================
+  * MAIN HEADER
+  * ===========================================================
+  */
+.main-header {
+	margin-bottom: 50px;
+}
+
+.container {
+	width: 860px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.container::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.main-header__logo {
+	float: left;
+	width: 155px;
+	height: 70px;
+	margin-right: 20px;
+}
+/*!
+  * ===========================================================
+  * MAIN NAVIGATION
+  * ===========================================================
+  */
+.main-nav__list {
+	float: left;
+	padding: 0;
+	margin: 20px;
+	list-style: none;
+}
+
+.main-nav::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.main-nav__user-list {
+	float: right;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav__item {
+	display: inline-block;
+	margin-right: 25px;
+	vertical-align: top;
+	position:relative;
+}
+.main-nav__item--margin {
+	margin-right: 0;
+}
+
+.main-nav__link {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+
+.main-nav__user-item {
+	position:relative;
+	display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.main-nav__user-login {
+	position: relative;
+	padding: 8px 20px;
+	padding-left: 45px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100px;
+	}
+
+.main-nav__user-login::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 20px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../глейси/img/entry.png");
+	background-repeat: no-repeat;
+	}
+
+ .main-nav__hidden-list {
+    position: absolute;
+	top: 40px;
+    right: 0px;
+	z-index: 5;
+	display: none;
+    padding: 15px 25px;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main-nav__hidden-item {
+	margin-bottom: 10px;
+
+}
+
+.main-nav__hidden-link {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 200;
+	text-decoration: none;
+	color: #323232;
+}
+
+.main-nav__hidden-link--change {
+	padding: 5px;
+	font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.main-nav__user-basket {
+
+	position: relative;
+	padding: 8px 30px;
+	padding-left: 45px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: medium;
+	text-decoration: none;
+	color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100px;
+}
+
+
+.main-nav__user-basket::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 20px;
+	width: 21px;
+	height: 20px;
+	background-image: url("../глейси/img/basket.png");
+	}
+
+.main-nav__user-search {
+	position: relative;
+	padding: 17px;
+	vertical-align: middle;
+	font-size: 0;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 100%;
+}
+
+.main-nav__user-search::before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../глейси/img/search.png");
+	background-repeat: no-repeat;
+}
+/*!
+  * ===========================================================
+  * SLIDER
+  * ===========================================================
+  */
+.slider {
+	position: relative;
+	padding-top: 380px;
+	text-align: center;
+	color :#ffffff;
+}
+
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+.slide-btn {
+	display: inline-block;
+	padding: 12px 50px;
+	vertical-align: top;
+	font-size: 31px;
+	line-height: 41px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #f26843;
+	background-image: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	border-radius: 100px;
+	text-shadow: 0 2px 5px rgba(160,32,11,0.76);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+}
+
+.inputs {
+display: none;
+}
+
+.slide {
+	display: none;
+}
+
+#btn-1:checked~.site-wrapper #slide1,
+#btn-2:checked~.site-wrapper #slide2,
+#btn-3:checked~.site-wrapper #slide3 {
+	display: block;
+}
+
+#btn-1:checked~.site-wrapper label[for="btn-1"],
+#btn-2:checked~.site-wrapper label[for="btn-2"],
+#btn-3:checked~.site-wrapper label[for="btn-3"] {
+	background-color: #ffffff;
+}
+
+#btn-1:checked~.site-wrapper {
+	background-color: #849d8f;
+	background-image: url("../глейси/img/ice-cream-1.png");
+}
+
+#btn-2:checked~.site-wrapper {
+	background-color: #8b98a8;
+	background-image: url("../глейси/img/ice-cream-2.png");
+}
+
+#btn-3:checked~.site-wrapper {
+	background-color: #a4928b;
+	background-image: url("../глейси/img/ice-cream-3.png");
+}
+/*!
+  * ===========================================================
+  * PROMO BLOCK
+  * ===========================================================
+  */
+.promo {
+    margin-bottom: 40px;
+}
+
+.promo::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.promo__first-card {
+	float: left;
+	width: 380px;
+	padding: 20px;
+	background-image: url("../глейси/img/strawberry.png");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+}
+
+.promo__second-card {
+	float: right;
+	width: 380px;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-image: url("../глейси/img/chocolates.png");
+	border-radius: 10px;
+
+}
+.promo__title {
+	margin: 0;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.promo__text {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.promo__link {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	padding: 10px 20px;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #ffffff;
+	background-image: linear-gradient(90deg, #e74a35, #f26843);
+	border-radius: 100px;
+	box-shadow:0 2px 2px rgba(172, 16, 0, 0.64);
+}
+/*!
+  * ===========================================================
+  * CATEGORIES
+  * ===========================================================
+  */
+.categories::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.categories__cards::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.categories__cards {
+	position: relative;
+	float: left;
+	width: 200px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+
+.categories__cards--margin {
+	margin-right: 0;
+}
+
+.categories__cards::before {
+	content: url("../глейси/img/hit.png");
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background-repeat: no-repeat;
+}
+
+.categories__link {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: medium;
+	text-align: center;
+	color: #ffffff;
+}
+
+.categories__cards b {
+	display: inline-block;
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: medium;
+	text-align: center;
+	color: #ffffff;
+}
+
+.categories__cost {
+	position: absolute;
+	bottom: 110px;
+	left: 0px;
+	padding-right: 40px;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	background-image: url("../глейси/img/ruble.png");
+	background-position: 80px 5px;
+	background-repeat: no-repeat;
+}
+
+.categories__weight {
+	position: absolute;
+	bottom: 105px;
+	left: 110px;
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.categories__cost--mod {
+	bottom: 90px;
+}
+
+.categories__weight--mod {
+	bottom: 85px;
+}
+/*!
+  * ===========================================================
+  * FEATURES
+  * ===========================================================
+  */
+.features {
+	margin-bottom: 50px;
+	padding: 20px;
+	background-image: url("../глейси/img/wafer.png");
+	border-radius: 20px;
+}
+.features h2 {
+	margin: 0;
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+}
+
+.features__list {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+	margin-top: 20px;
+	list-style: none;
+}
+
+.features__item {
+	position: relative;
+	flex-basis: auto;
+	flex-shrink: 1;
+	flex-grow: 0;
+	width: 44%;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #323232;
+}
+
+.features__item--margin {
+	margin-bottom: 20px;
+}
+
+.features__item--else__margin {
+margin-left: 10px;
+}
+
+.features__item::after {
+	content: url("../глейси/img/leaf.png");
+	position: absolute;
+	top: -15px;
+	left: -55px;
+	width: 50px;
+	height: 50px;
+}
+
+.features__item:first-child::after {
+	content: url("../глейси/img/small-ice-cream.png");
+}
+
+.features__item:nth-child(2)::after {
+	content: url("../глейси/img/cow.png");
+}
+
+.features__item:nth-child(4)::after {
+	content: url("../глейси/img/thermometer.png");
+}
+/*!
+  * ===========================================================
+  * NEWS
+  * ===========================================================
+  */
+.news {
+	margin-bottom: 20px;
+}
+
+.news::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.news__article {
+	float: left;
+	width: 380px;
+	padding: 20px;
+	padding-bottom: 120px;
+	background-image: url("../глейси/img/strawberry-big.jpg");
+	background-repeat: no-repeat;
+	background-position: -20px -40px;
+	border-radius: 10px;
+}
+
+.news__form {
+	float: right;
+	width: 420px;
+	background-image: url("../глейси/img/pattern.jpg");
+	border-radius: 10px;
+}
+
+.news__text {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
+.news b {
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: medium;
+	color: #5a5a5a;
+}
+
+.news__container {
+    margin: 5px;
+    padding: 30px 20px;
+    background-color: #f8f7f4;
+	border-radius: 10px;
+}
+
+.news__link {
+	display: block;
+	margin: 0;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #353535;
+}
+
+.news__input {
+	width: 190px;
+	padding: 10px;
+	font-size: 16x;
+	line-height: 24px;
+	font-weight: 200;
+	color: #a0a0a0;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
+}
+
+.news__btn {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 10px 20px;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #ffffff;
+	background-image: linear-gradient(90deg, #e74a35, #f26843);
+	border-radius: 100px;
+	border: 0px;
+	box-shadow: 0px 2px 1px 0px rgba(172, 16, 0, 0.64);
+	outline:none;
+}
+/*!
+  * ===========================================================
+  * MAP
+  * ===========================================================
+  */
+iframe {
+	width: 100%;
+}
+
+.map {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.map__content {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+	z-index: 20;
+	width:300px;
+    padding: 35px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+/*!
+  * ===========================================================
+  * MAIN FOOTER
+  * ===========================================================
+  */
+  .main-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.social {
+	width: 200px;
+	margin-right: 60px;
+}
+
+.social__btn {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+	font-size: 0;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+}
+
+.social__btn--tw {
+	width: 32px;
+	height: 32px;
+	background-image: url("../глейси/img/sprite-social.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.social__btn--inst {
+	width: 32px;
+	height: 32px;
+	background-image: url("../глейси/img/sprite-social.png");
+	background-repeat: no-repeat;
+	background-position: -50px 0px;
+}
+
+.social__btn--fb {
+	width: 32px;
+	height: 32px;
+	background-image: url("../глейси/img/sprite-social.png");
+	background-repeat: no-repeat;
+	background-position: -99px 0px;
+}
+
+.social__btn--vk {
+
+	width: 32px;
+	height: 32px;
+	background-image: url("../глейси/img/sprite-social.png");
+	background-repeat: no-repeat;
+	background-position: -148px 0px;
+}
+
+.footer__list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 310px;
+	list-style: none;
+}
+
+.footer__item {
+	margin-right: 20px;
+}
+
+.footer__item--margin {
+	margin-right: 30px;
+}
+
+.footer__item--image {
+	position: relative;
+}
+
+.footer__item--image::before {
+	content: url("../глейси/img/icon-heart.png");
+	position: absolute;
+	left: -20px;
+	top: 5px;
+}
+
+.footer__link {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 200;
+	color: #ffffff;
+}
+
+.footer__link--mod {
+	font-weight: 600;
+}
+
+.copyright {
+	width: 185px;
+	margin-left: auto;
+}
+
+.copyright__text {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 200;
+	color: #ffffff;
+}
+.copyright__link {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 200;
+	color: #ffffff;
+}
+/*!
+  * ===========================================================
+  * POP-UP
+  * ===========================================================
+  */
+.pop-up__search {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 5;
+	display: none;
+	width: 300px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.pop-up__search--show {
+	display: block;
+}
+
+.pop-up__search-input {
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 24.3px;
+	font-weight: 200;
+	color: #999999;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+}
+
+.pop-up__login {
+	position: absolute;
+	right: 0;
+    top: 50px;
+    z-index: 5;
+    display: none;
+    flex-wrap: wrap;
+    width: 240px;
+    padding: 20px;
+	background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.pop-up__login--show {
+	display: flex;
+}
+
+.pop-up__login-input {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 200;
+	color: #999999;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+}
+
+.pop-up__btn {
+	padding: 10px 25px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	background-image: linear-gradient(90deg, #e74a35, #f26843);
+	border-radius: 15px;
+	border: 0px;
+	box-shadow: 0px 2px 1px 0px rgba(172, 16, 0, 0.64);
+}
+
+.pop-up__help {
+width: 120px;
+margin-left: auto;
+}
+
+.pop-up__help a {
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 200;
+	color: #323232;
+}
+
+.pop-up__close,
+.pop-up__search-close {
+	position: absolute;
+	top: 5px;
+	right: 7px;
+	width: 10px;
+	height: 15px;
+	font-size: 0;
+	background-image: url("../глейси/img/close.png");
+	background-repeat: no-repeat;
+	background-color: #f8f7f4;
+	border: 0;
+}
+/*!
+  * ===========================================================
+  * LINK STATES
+  * ===========================================================
+  */
+
+.main-nav__item a:hover {
+	padding: 5px;
+    color: #333333;
+	background-color: #f7f6f3;
+    border: 0;
+	border-radius: 15px;
+}
+
+.main-nav__item a:active {
+	padding: 5px;
+	color: #333333;
+    background-color: #f7f6f3;
+    border: 0;
+	border-radius: 15px;
+    box-shadow: inset 0px 2px 1px 0px #696969;
+}
+
+.main-nav__item a:focus {
+	padding: 5px;
+    background-color: #d6836e;
+    border: 0;
+    border-radius: 15px;
+}
+
+.main-nav__item:hover .main-nav__hidden-list {
+	display: block;
+}
+
+.main-nav__user-search:hover::before {
+	background-image: url("../глейси/img/search-pointing.png");
+    background-repeat: no-repeat;
+}
+
+.main-nav__user-search:hover,
+.main-nav__user-login:hover {
+	color: #333333;
+	background-color: #f7f6f3;
+}
+
+.main-nav__user-login:hover::before {
+    background-image: url("../глейси/img/entry-pointing.png");
+    background-repeat: no-repeat;
+}
+
+.main-nav__user-basket:hover {
+	color: #333333;
+	background-color: #f7f6f3;
+}
+
+.main-nav__user-basket:hover::before {
+	background-image: url("../глейси/img/basket-pointing.png");
+    background-repeat: no-repeat;
+}
+
+.main-nav__user-basket:focus,
+.main-nav__user-login:focus,
+.main-nav__user-search:focus {
+    background-color: #d6836e;
+}
+
+.slider-controls label:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.categories__link:hover,
+.news__link:hover {
+	color: #e84d37;
+}
+
+.promo__link:hover,
+.slide-btn:hover,
+.pop-up__btn:hover,
+.news__btn:hover {
+    color: #323232;
+}
+
+.promo__link:active,
+.slide-btn:active,
+.pop-up__btn:active,
+.news__btn:active {
+	box-shadow: 0px 2px 1px 1px #7e0a01;
+}
+
+.promo__link:focus,
+.slide-btn:focus,
+.pop-up__btn:focus,
+.news__btn:focus {
+	box-shadow: 0px -2px 2px 1px #7e0a01;
+	background-image: linear-gradient(180deg, #e74a35, #f26843);
+}
+
+footer a:hover,
+footer a:focus {
+	color: #e84d37;
+}
